@@ -6,60 +6,70 @@
 <title>Cine Costume Hariprasad Tailors, Hyderabad</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --ink:#14213d; --ink-2:#1d2d52; --tape:#f2c230; --chalk:#f6f7f9; --paper:#ffffff; --text:#1c2333; --muted:#5a6479; --line:#d9deea;
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){ --chalk:#0e1630; --paper:#16203d; --text:#eef1f8; --muted:#a6b0c8; --line:#2a3658; }
-}
-:root[data-theme="dark"]{ --chalk:#0e1630; --paper:#16203d; --text:#eef1f8; --muted:#a6b0c8; --line:#2a3658; }
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+:root{--bg:#0c0911;--bg2:#120d1a;--card:#18121f;--card2:#1f1728;--line:rgba(255,255,255,.09);--gold:#e0bb70;--gold2:#f3d796;--rose:#e0678a;--text:#f3eef8;--muted:#a99fb8;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{background:var(--bg);scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:inherit}
-body{margin:0;background:var(--chalk);color:var(--text);font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6}
-h1,h2,h3{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;line-height:1.1;margin:0}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--tape);outline-offset:3px}
-.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Jost","Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Playfair Display",Georgia,"Times New Roman",serif;line-height:1.12;margin:0;font-weight:700}
+a{color:var(--gold)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
 
 /* hero */
-.hero{background:var(--ink);color:#fff;padding:72px 0 0;overflow:hidden}
-.hero h1{font-size:clamp(2.4rem,8vw,5.2rem);font-weight:800;letter-spacing:-.02em;max-width:14ch}
-.hero h1 span{display:block;font-weight:500;font-size:.42em;letter-spacing:0;margin-top:.6em;color:var(--tape)}
-.hero p{max-width:52ch;font-size:1.2rem;color:#d7def0;margin:26px 0 32px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:14px 24px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--tape)}
-.btn.primary{background:var(--tape);color:var(--ink)}
+.hero{position:relative;padding:96px 0 0;overflow:hidden;color:#fff;background:radial-gradient(800px 480px at 88% -5%,rgba(224,103,138,.28),transparent 62%),radial-gradient(700px 460px at 0% 10%,rgba(224,187,112,.18),transparent 60%),var(--bg)}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);letter-spacing:-.01em;max-width:13ch}
+.hero h1 span{display:block;font-family:"Jost",system-ui,sans-serif;font-weight:500;font-size:.34em;letter-spacing:.22em;text-transform:uppercase;margin-top:1.2em;background:linear-gradient(90deg,var(--gold2),var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:52ch;font-size:1.2rem;color:#cfc6dc;margin:26px 0 34px}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid rgba(224,187,112,.55);color:var(--gold2);transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);background:rgba(224,187,112,.1)}
+.btn.primary{background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,#c99a4a);color:#2a1a05;border-color:transparent;box-shadow:0 8px 28px rgba(224,187,112,.28)}
+.btn.primary:hover{background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,#c99a4a);box-shadow:0 12px 34px rgba(224,187,112,.4)}
 .btn.ghost{color:#fff}
-.tape{margin-top:56px;height:46px;background:var(--tape);color:var(--ink);display:flex;align-items:flex-end;
-  background-image:repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 12px),repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 60px);
-  background-size:12px 14px,60px 26px;background-repeat:repeat-x;background-position:bottom left}
+.tape{margin-top:64px;height:2px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,transparent 14px 24px);opacity:.7}
 
-section{padding:64px 0}
-h2{font-size:clamp(1.8rem,4.5vw,2.6rem);margin-bottom:12px}
-.lead{color:var(--muted);max-width:60ch;margin:0 0 36px}
+section{padding:80px 0}
+h2{font-size:clamp(1.9rem,4.6vw,2.8rem);margin-bottom:14px}
+h2::after{content:"";display:block;width:56px;height:3px;border-radius:3px;margin-top:14px;background:linear-gradient(90deg,var(--gold),var(--rose))}
+.lead{color:var(--muted);max-width:60ch;margin:18px 0 40px}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:2px solid var(--ink)}
-.item{padding:24px 24px 28px 0;border-bottom:1px solid var(--line)}
-.item h3{font-size:1.3rem;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.item{padding:26px;background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.item:hover{transform:translateY(-4px);border-color:rgba(224,187,112,.45);box-shadow:0 16px 40px rgba(0,0,0,.45)}
+.item h3{font-size:1.3rem;margin-bottom:8px;color:var(--gold2)}
 .item p{margin:0;color:var(--muted)}
 
-.steps{background:var(--paper);border-block:1px solid var(--line)}
-.steps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;counter-reset:s}
-.steps li{counter-increment:s;border-left:4px solid var(--tape);padding-left:16px}
-.steps li::before{content:counter(s);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:2rem;display:block}
-.steps strong{display:block;font-size:1.1rem}
+.steps{background:var(--bg2);border-block:1px solid var(--line)}
+.steps ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;counter-reset:s}
+.steps li{counter-increment:s;padding:24px;background:var(--card);border:1px solid var(--line);border-radius:18px}
+.steps li::before{content:counter(s);font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:2.4rem;line-height:1;display:block;margin-bottom:10px;background:linear-gradient(135deg,var(--gold2),var(--rose));-webkit-background-clip:text;background-clip:text;color:transparent}
+.steps strong{display:block;font-size:1.15rem;margin-bottom:4px}
 .steps span{color:var(--muted)}
 
-.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:10px 24px;margin:0 0 28px}
-.contact dt{font-weight:600}
+.status{background:radial-gradient(620px 320px at 8% 0%,rgba(224,103,138,.13),transparent 70%)}
+.lookup{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin-bottom:26px}
+.lookup label{display:block;font-weight:600;margin-bottom:8px;color:var(--gold2)}
+.lookup input{font:inherit;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;background:var(--card);color:var(--text);min-width:240px}
+.lookup input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 4px rgba(224,187,112,.18)}
+.lookup button{font:inherit;font-weight:600;padding:15px 28px;border-radius:999px;border:0;background:linear-gradient(135deg,var(--gold2),var(--gold) 55%,#c99a4a);color:#2a1a05;cursor:pointer;box-shadow:0 8px 28px rgba(224,187,112,.25);transition:transform .2s}
+.lookup button:hover{transform:translateY(-2px)}
+#result h3{font-size:1.4rem;margin-bottom:14px}
+.msg{color:var(--muted)}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.items li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 20px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.chip{padding:5px 14px;border-radius:999px;font-size:.92rem;font-weight:600;border:1.5px solid var(--rose);color:#ffc2d3;background:rgba(224,103,138,.1)}
+.chip.done{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#2a1a05;border-color:transparent}
+.items small{flex-basis:100%;color:var(--muted)}
+
+.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:12px 28px;margin:0;padding:28px;background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:20px}
+.contact dt{font-weight:600;color:var(--gold2)}
 .contact dd{margin:0;color:var(--muted)}
 .note{font-size:.95rem;color:var(--muted)}
-.lookup{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;margin-bottom:24px}.lookup label{display:block;font-weight:600;margin-bottom:6px}.lookup input{font:inherit;padding:12px 14px;border:2px solid var(--ink);border-radius:6px;background:var(--paper);color:var(--text);min-width:220px}.lookup button{font:inherit;font-weight:600;padding:14px 24px;border-radius:6px;border:2px solid var(--tape);background:var(--tape);color:var(--ink);cursor:pointer}#result h3{font-size:1.3rem;margin-bottom:12px}.msg{color:var(--muted)}.items{list-style:none;margin:0;padding:0;border-top:2px solid var(--ink)}.items li{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:14px 0;border-bottom:1px solid var(--line)}.chip{padding:4px 12px;border-radius:999px;font-size:.95rem;border:2px solid var(--tape)}.chip.done{background:var(--tape);color:var(--ink)}.items small{flex-basis:100%;color:var(--muted)}
-footer{background:var(--ink);color:#c9d2ea;padding:26px 0;font-size:.95rem}
-@media (max-width:520px){.contact dl{grid-template-columns:1fr}.contact dd{margin-bottom:10px}}
+footer{background:var(--bg2);border-top:1px solid var(--line);color:var(--muted);padding:28px 0;font-size:.95rem}
+@media (max-width:520px){.contact dl{grid-template-columns:1fr;gap:4px}.contact dd{margin-bottom:12px}section{padding:60px 0}.hero{padding-top:72px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -126,7 +136,7 @@ footer{background:var(--ink);color:#c9d2ea;padding:26px 0;font-size:.95rem}
     <dl>
       <dt>Phone</dt><dd><a href="tel:+919346326867">+91 93463 26867</a></dd>
       <dt>WhatsApp</dt><dd><a href="https://wa.me/919346326867">Message us on WhatsApp</a></dd>
-      <dt>Address</dt><dd>Shop No. 8, backside of Value Zone Hyper Mart, 3-957, Srinagar Colony Main Road, Pratap Nagar, Nagarjuna Nagar Colony, Ameerpet, Hyderabad, Telangana. <a href="https://www.google.com/maps/search/?api=1&query=Cine+Costume+Hari+Prasad+Tailors+Ameerpet+Hyderabad">Get directions</a></dd>
+      <dt>Address</dt><dd>Shop No. 8-3-957, backside of Value Zone Hyper Mart, Srinagar Colony Main Road, Pratap Nagar, Nagarjuna Nagar Colony, Ameerpet, Hyderabad, Telangana. <a href="https://www.google.com/maps/search/?api=1&query=Cine+Costume+Hari+Prasad+Tailors+Ameerpet+Hyderabad">Get directions</a></dd>
       <dt>Hours</dt><dd>Open until 9 pm</dd>
     </dl>
   </div>
